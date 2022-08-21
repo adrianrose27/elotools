@@ -1,0 +1,68 @@
+[2022-08-21 20:26:56] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:207)
+[stacktrace]
+#0 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(132): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(119): Illuminate\\Log\\LogManager->get(NULL)
+#2 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(636): Illuminate\\Log\\LogManager->driver()
+#3 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(278): Illuminate\\Log\\LogManager->error('Undefined const...', Array)
+#4 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(367): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(Error))
+#6 D:\\elotools\\public_html\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2022-08-21 20:26:56] laravel.ERROR: Undefined constant "index" {"exception":"[object] (Error(code: 0): Undefined constant \"index\" at D:\\elotools\\public_html\\bootstrap\\app.php:19)
+[stacktrace]
+#0 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(871): {closure}(Object(Illuminate\\Foundation\\Application), Array)
+#1 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(756): Illuminate\\Container\\Container->build(Object(Closure))
+#2 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(857): Illuminate\\Container\\Container->resolve('path.public', Array, true)
+#3 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(692): Illuminate\\Foundation\\Application->resolve('path.public', Array)
+#4 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(842): Illuminate\\Container\\Container->make('path.public', Array)
+#5 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(613): Illuminate\\Foundation\\Application->make('path.public')
+#6 D:\\elotools\\public_html\\config\\filesystems.php(73): public_path('storage')
+#7 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(72): require('D:\\\\elotools\\\\pub...')
+#8 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#9 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\elotools\\public_html\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2022-08-21 18:27:07] production.ERROR: The provided cwd "index.php" does not exist. {"exception":"[object] (Symfony\\Component\\Process\\Exception\\RuntimeException(code: 0): The provided cwd \"index.php\" does not exist. at D:\\elotools\\public_html\\vendor\\symfony\\process\\Process.php:344)
+[stacktrace]
+#0 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php(142): Symfony\\Component\\Process\\Process->start(Object(Closure))
+#1 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php(91): Illuminate\\Foundation\\Console\\ServeCommand->startProcess(false)
+#2 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\ServeCommand->handle()
+#3 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(139): Illuminate\\Container\\Container->call(Array)
+#8 D:\\elotools\\public_html\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(124): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 D:\\elotools\\public_html\\vendor\\symfony\\console\\Application.php(998): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\elotools\\public_html\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\elotools\\public_html\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\elotools\\public_html\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2022-08-21 18:27:21] production.ERROR: The provided cwd "../index.php" does not exist. {"exception":"[object] (Symfony\\Component\\Process\\Exception\\RuntimeException(code: 0): The provided cwd \"../index.php\" does not exist. at D:\\elotools\\public_html\\vendor\\symfony\\process\\Process.php:344)
+[stacktrace]
+#0 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php(142): Symfony\\Component\\Process\\Process->start(Object(Closure))
+#1 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php(91): Illuminate\\Foundation\\Console\\ServeCommand->startProcess(false)
+#2 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\ServeCommand->handle()
+#3 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(139): Illuminate\\Container\\Container->call(Array)
+#8 D:\\elotools\\public_html\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(124): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 D:\\elotools\\public_html\\vendor\\symfony\\console\\Application.php(998): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\elotools\\public_html\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\elotools\\public_html\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\elotools\\public_html\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\elotools\\public_html\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
